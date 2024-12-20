@@ -134,3 +134,27 @@ blockquote {
         font-size: 1.5em; /* Adjust subtitle size for smaller screens */
     }
 }
+body {
+    font-family: 'Roboto', sans-serif; /* Default font */
+}
+h1, h2 {
+    font-family: 'Poiret One', cursive; /* Heading font */
+}
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.project {
+    transition: transform 0.3s; /* Smooth transition */
+}
+.project:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 5px 0; /* Adjust margin */
+    }
+}
