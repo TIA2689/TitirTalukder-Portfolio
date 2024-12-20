@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Poiret One', cursive; /* Use the imported font */
+    font-family: 'Poiret One', cursive; /* Elegant font */
     background: linear-gradient(to right, #22223B, #4A4E69); /* Gradient background */
     color: #f2e9e4; /* Light text color */
     margin: 0;
@@ -47,16 +47,66 @@ nav ul li a:hover {
     color: #ffab40; /* Highlight color on hover */
 }
 
-section {
+.container {
+    display: flex; /* Use flexbox for layout */
+}
+
+.sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    background-color: #4A4E69; /* Sidebar background color */
     padding: 20px;
-    margin: 20px;
-    background-color: #ffffff; /* White background for sections */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow for sidebar */
+}
+
+.sidebar h2 {
+    color: #f2e9e4; /* Light color for sidebar heading */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Space between links */
+}
+
+.sidebar ul li a {
+    color: #f2e9e4; /* Light link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #ffab40; /* Highlight color on hover */
+}
+
+.content {
+    flex: 1; /* Take remaining space */
+    padding: 20px; /* Padding for content */
+    background-color: #ffffff; /* White background for content */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+section {
+    margin-bottom: 20px; /* Space between sections */
+}
+
+h3 {
+    color: #4A4E69; /* Darker color for section headings */
+}
+
 .project {
     margin-bottom: 20px;
+    border: 1px solid #ddd; /* Light border for projects */
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.project:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
 }
 
 .project img {
@@ -103,58 +153,6 @@ form button:hover {
     background-color: #45a049; /* Darker button on hover */
 }
 
-/* Additional styles for social icons, cards, etc. */
-.icon-btn {
-    background-color: #4A4E69; /* Button background */
-    color: #ffffff; /* Button text color */
-    border-radius: 50%;
-    transition: transform 0.3s; /* Smooth scaling */
-}
-
-.icon-btn:hover {
-    transform: scale(1.1); /* Scale effect on hover */
-}
-
 /* Blockquote styles */
 blockquote {
-    border-left: 5px solid #ffab40; /* Highlight color for blockquotes */
-    color: #f2e9e4;
-    font-size: 125%;
-    font-weight: 400;
-    margin: 20px 0;
-    padding-left: 1.5rem;
-}
-
-/* Responsive styles */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2em; /* Adjust title size for smaller screens */
-    }
-    h2 {
-        font-size: 1.5em; /* Adjust subtitle size for smaller screens */
-    }
-}
-body {
-    font-family: 'Roboto', sans-serif; /* Default font */
-}
-h1, h2 {
-    font-family: 'Poiret One', cursive; /* Heading font */
-}
-nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-.project {
-    transition: transform 0.3s; /* Smooth transition */
-}
-.project:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-@media (max-width: 768px) {
-    header {
-        padding: 10px; /* Reduce padding on smaller screens */
-    }
-    nav ul li {
-        display: block; /* Stack navigation items */
-        margin: 5px 0; /* Adjust margin */
-    }
-}
+   
