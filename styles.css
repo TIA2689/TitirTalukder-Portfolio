@@ -1,25 +1,29 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Poiret One', cursive; /* Use the imported font */
+    background: linear-gradient(to right, #22223B, #4A4E69); /* Gradient background */
+    color: #f2e9e4; /* Light text color */
     margin: 0;
     padding: 0;
+    line-height: 1.6; /* Improved line height for readability */
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4A4E69; /* Darker header background */
+    color: #f2e9e4; /* Light text color */
     padding: 20px;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
 h1 {
     margin: 0;
+    font-size: 2.5em; /* Larger title */
 }
 
 h2 {
     margin: 10px 0;
+    font-weight: 300; /* Lighter weight for subtitles */
 }
 
 nav ul {
@@ -33,17 +37,22 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #f2e9e4; /* Light link color */
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ffab40; /* Highlight color on hover */
 }
 
 section {
     padding: 20px;
     margin: 20px;
-    background-color: white;
+    background-color: #ffffff; /* White background for sections */
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .project {
@@ -59,8 +68,8 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4A4E69; /* Dark footer background */
+    color: #f2e9e4; /* Light text color */
     position: relative;
     bottom: 0;
     width: 100%;
@@ -82,123 +91,46 @@ form input, form textarea {
 
 form button {
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Button color */
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Darker button on hover */
 }
 
-.profile-pic {
-  position: relative;
-  max-width: 130px;
-  max-height: 130px;
-  width: auto;
-  height: auto;
-  overflow: hidden;
-  margin: -31px; 
-  margin-left: -7px;
-  border: 6px solid #4A4E69; 
-  border-radius: 50% !important;
-}
-
-.profile-pic img {
-  width: 100%;
-  height: auto;
-}
-
-.tracker {
-  position: fixed;
-  bottom: 0; 
-  right: 0;
-}
-
-.social {
-  margin: 0 auto;
-  width: auto;
-  text-align: inherit;
-}
-
+/* Additional styles for social icons, cards, etc. */
 .icon-btn {
-  margin-left: auto;
-  width: 50px;
-  height: 50px;
-  border: 0;
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 30px;
-  line-height: 70px;
-  border-radius: 45px;
-  display: inline-block;
-  margin: 4px;
-}
-
-.github {
-  color: #22223B;
-}
-
-.linkedin {
-  color: #0077b5;
-}
-
-.angellist {
-  color: grey;
+    background-color: #4A4E69; /* Button background */
+    color: #ffffff; /* Button text color */
+    border-radius: 50%;
+    transition: transform 0.3s; /* Smooth scaling */
 }
 
 .icon-btn:hover {
-  transform: scale(1.10);
-  color: #ffffff;
+    transform: scale(1.1); /* Scale effect on hover */
 }
 
-.linkedin:hover {
-  background-color: #ffffff;
+/* Blockquote styles */
+blockquote {
+    border-left: 5px solid #ffab40; /* Highlight color for blockquotes */
+    color: #f2e9e4;
+    font-size: 125%;
+    font-weight: 400;
+    margin: 20px 0;
+    padding-left: 1.5rem;
 }
 
-.angellist:hover {
-  background-color: grey;
+/* Responsive styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Adjust title size for smaller screens */
+    }
+    h2 {
+        font-size: 1.5em; /* Adjust subtitle size for smaller screens */
+    }
 }
-
-.github:hover {
-  background-color: black;
-}
-
-/* Buttons - Read Me, Contact Us */
-
-.readme {
-  position: relative;
-  padding: 11px 35px;
-  background: #ffffff;
-  color: #ffffff;
-  border: 2px solid #fff;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-.contactme {
-  position: relative;
-  padding: 11px 35px;
-  background: none;
-  color: #f2e9e4;
-  border: 2px solid #f2e9e4;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  margin-top: 1.5em;
-  border-radius: 5px;
-}
-
-.contactme:hover {
-  color: #22223B;
-  background-color: #9A8C98;
-  border: 2px solid #2f2f57;
-}
-
-/* Additional styles... */
