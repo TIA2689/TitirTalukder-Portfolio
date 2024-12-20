@@ -92,3 +92,113 @@ form button {
 form button:hover {
     background-color: #45a049;
 }
+
+.profile-pic {
+  position: relative;
+  max-width: 130px;
+  max-height: 130px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  margin: -31px; 
+  margin-left: -7px;
+  border: 6px solid #4A4E69; 
+  border-radius: 50% !important;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.tracker {
+  position: fixed;
+  bottom: 0; 
+  right: 0;
+}
+
+.social {
+  margin: 0 auto;
+  width: auto;
+  text-align: inherit;
+}
+
+.icon-btn {
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 70px;
+  border-radius: 45px;
+  display: inline-block;
+  margin: 4px;
+}
+
+.github {
+  color: #22223B;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.angellist {
+  color: grey;
+}
+
+.icon-btn:hover {
+  transform: scale(1.10);
+  color: #ffffff;
+}
+
+.linkedin:hover {
+  background-color: #ffffff;
+}
+
+.angellist:hover {
+  background-color: grey;
+}
+
+.github:hover {
+  background-color: black;
+}
+
+/* Buttons - Read Me, Contact Us */
+
+.readme {
+  position: relative;
+  padding: 11px 35px;
+  background: #ffffff;
+  color: #ffffff;
+  border: 2px solid #fff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.contactme {
+  position: relative;
+  padding: 11px 35px;
+  background: none;
+  color: #f2e9e4;
+  border: 2px solid #f2e9e4;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 1.5em;
+  border-radius: 5px;
+}
+
+.contactme:hover {
+  color: #22223B;
+  background-color: #9A8C98;
+  border: 2px solid #2f2f57;
+}
+
+/* Additional styles... */
