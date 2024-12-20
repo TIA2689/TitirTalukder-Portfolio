@@ -1,19 +1,19 @@
 /* General Styles */
 body {
     font-family: 'Poiret One', cursive; /* Elegant font */
-    background: linear-gradient(to right, #22223B, #4A4E69); /* Gradient background */
-    color: #f2e9e4; /* Light text color */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
     margin: 0;
     padding: 0;
     line-height: 1.6; /* Improved line height for readability */
 }
 
 header {
-    background-color: #4A4E69; /* Darker header background */
-    color: #f2e9e4; /* Light text color */
+    background-color: #1a1a1a; /* Darker header background */
+    color: #ffffff; /* White text color */
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Subtle shadow */
 }
 
 h1 {
@@ -37,14 +37,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f2e9e4; /* Light link color */
+    color: #90caf9; /* Blue-grey link color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 nav ul li a:hover {
-    color: #ffab40; /* Highlight color on hover */
+    color: #64b5f6; /* Lighter blue-grey on hover */
 }
 
 .container {
@@ -53,13 +53,13 @@ nav ul li a:hover {
 
 .sidebar {
     width: 250px; /* Fixed width for sidebar */
-    background-color: #4A4E69; /* Sidebar background color */
+    background-color: #1a1a1a; /* Sidebar background color */
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow for sidebar */
+    box-shadow: 2px 0 5px rgba(255, 255, 255, 0.1); /* Shadow for sidebar */
 }
 
 .sidebar h2 {
-    color: #f2e9e4; /* Light color for sidebar heading */
+    color: #ffffff; /* White color for sidebar heading */
 }
 
 .sidebar ul {
@@ -72,21 +72,21 @@ nav ul li a:hover {
 }
 
 .sidebar ul li a {
-    color: #f2e9e4; /* Light link color */
+    color: #90caf9; /* Blue-grey link color */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .sidebar ul li a:hover {
-    color: #ffab40; /* Highlight color on hover */
+    color: #64b5f6; /* Lighter blue-grey on hover */
 }
 
 .content {
     flex: 1; /* Take remaining space */
     padding: 20px; /* Padding for content */
-    background-color: #ffffff; /* White background for content */
+    background-color: #121212; /* Dark background for content */
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Subtle shadow */
 }
 
 section {
@@ -94,12 +94,12 @@ section {
 }
 
 h3 {
-    color: #4A4E69; /* Darker color for section headings */
+    color: #90caf9; /* Blue-grey color for section headings */
 }
 
 .project {
     margin-bottom: 20px;
-    border: 1px solid #ddd; /* Light border for projects */
+    border: 1px solid #333; /* Dark border for projects */
     border-radius: 8px;
     padding: 15px;
     transition: transform 0.3s; /* Smooth transition */
@@ -118,8 +118,8 @@ h3 {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4A4E69; /* Dark footer background */
-    color: #f2e9e4; /* Light text color */
+    background-color: #1a1a1a; /* Dark footer background */
+    color: #ffffff; /* White text color */
     position: relative;
     bottom: 0;
     width: 100%;
@@ -135,13 +135,15 @@ form {
 form input, form textarea {
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #555; /* Dark border for inputs */
     border-radius: 4px;
+    background-color: #222; /* Dark background for inputs */
+    color: #ffffff; /* White text color for inputs */
 }
 
 form button {
     padding: 10px;
-    background-color: #4CAF50; /* Button color */
+    background-color: #90caf9; /* Blue-grey button color */
     color: white;
     border: none;
     border-radius: 4px;
@@ -150,9 +152,4 @@ form button {
 }
 
 form button:hover {
-    background-color: #45a049; /* Darker button on hover */
-}
-
-/* Blockquote styles */
-blockquote {
-   
+    background-color: #64b5f6; /* Lighter blue-grey on
